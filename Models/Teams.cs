@@ -22,5 +22,8 @@ namespace Assignment2.Models
         [DisplayFormat(DataFormatString = "{ 0 : c }")]
         public int Budget { get; set; }
 
+
+        public List<Players>? Players { get; set; }
+
     }
 }

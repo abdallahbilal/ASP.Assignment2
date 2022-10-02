@@ -7,7 +7,11 @@ namespace Assignment2.Models
     public class Players
     {
         [Required]
-        public int PlayerNumber { get; set; }
+        public int PlayerId { get; set; }
+
+
+        [Required]
+        public int TeamId { get; set; }
 
 
         [Required]
@@ -23,8 +27,10 @@ namespace Assignment2.Models
 
 
         [Required]
-        [DisplayFormat(DataFormatString="{ 0 : c }")]
+        [DisplayFormat(DataFormatString = "{ 0 : c }")]
         public int PurchasePrice { get; set; }
+
+        public Teams? Teams { get; set; }
 
 
 
