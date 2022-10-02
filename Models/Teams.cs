@@ -19,6 +19,7 @@ namespace Assignment2.Models
 
 
         [Required]
+        [DisplayFormat(DataFormatString = "{ 0 : c }")]
         public int Budget { get; set; }
 
     }
