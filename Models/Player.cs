@@ -4,26 +4,35 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Assignment2.Models
 {
-    public class Teams
+    public class Player
     {
+        [Required]
+        public int PlayerId { get; set; }
+
+
         [Required]
         public int TeamId { get; set; }
 
 
         [Required]
-        public string TeamName { get; set; }  
-        
-
-        [Required]
-        public string TeamCoach { get; set; }
+        public string PlayerName { get; set; }
 
 
         [Required]
-        [DisplayFormat(DataFormatString = "{ 0 : c }")]
-        public int Budget { get; set; }
+        public string Country { get; set; }
 
 
-        public List<Players>? Players { get; set; }
+        [Required]
+        public int Age { get; set; }
+
+
+
+        public Team? Teams { get; set; }
+
+
+
+
+
 
     }
 }
