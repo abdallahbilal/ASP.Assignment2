@@ -17,8 +17,9 @@ namespace Assignment2.Models
         [Required]
         public string TeamCoach { get; set; }
 
+        [Required]
+        public string TeamLeague { get; set; }
 
-       
 
         public List<Player>? Players { get; set; }
 

@@ -54,7 +54,7 @@ namespace Assignment2.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("TeamId,TeamName,TeamCoach")] Team team)
+        public async Task<IActionResult> Create([Bind("TeamId,TeamName,TeamCoach,TeamLeague")] Team team)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace Assignment2.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("TeamId,TeamName,TeamCoach")] Team team)
+        public async Task<IActionResult> Edit(int id, [Bind("TeamId,TeamName,TeamCoach,TeamLeague")] Team team)
         {
             if (id != team.TeamId)
             {
