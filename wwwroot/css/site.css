@@ -41,8 +41,8 @@ background-image: linear-gradient(to bottom right, blue, purple, pink);
     color:white;
 }
 
-.Create{
-    padding-left:10px;
+.Create {
+    margin-left: 180px;
 }
 
 .Create,.Edits{
@@ -54,4 +54,11 @@ background-image: linear-gradient(to bottom right, blue, purple, pink);
 .MainHeadingForPages{
     color:white;
     text-align:center;
+}
+
+.table {
+    width: 72%;
+    table-layout: auto;
+    text-align: center;
+    margin-left: 180px;
 }
