@@ -41,6 +41,15 @@ background-image: linear-gradient(to bottom right, blue, purple, pink);
     color:white;
 }
 
+.Create{
+    padding-left:10px;
+}
+
+.Create,.Edits{
+    text-decoration:none;
+    
+}
+
 
 .MainHeadingForPages{
     color:white;
