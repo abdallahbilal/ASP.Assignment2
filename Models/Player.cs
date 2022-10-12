@@ -11,8 +11,9 @@ namespace Assignment2.Models
 
 
         [Required]
-        public int TeamId { get; set; }
+        public string TeamId { get; set; }
 
+        
 
         [Required]
         public string PlayerName { get; set; }

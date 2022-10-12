@@ -42,7 +42,7 @@ background-image: linear-gradient(to bottom right, blue, purple, pink);
 }
 
 .Create {
-    margin-left: 180px;
+    
 }
 
 .Create,.Edits{
@@ -61,4 +61,15 @@ background-image: linear-gradient(to bottom right, blue, purple, pink);
     table-layout: auto;
     text-align: center;
     margin-left: 180px;
+}
+
+.col-md-4 {
+    color: white;
+    margin-left: 461px;
+}
+
+.pb-3 {
+    color: white;
+    text-align: center;
+
 }
