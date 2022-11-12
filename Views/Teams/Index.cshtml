@@ -6,9 +6,12 @@
 
 <h1 class="MainHeadingForPages">Teams</h1>
 
+   @if (User.IsInRole("Administrator"))
+                        { 
 <p>
     <a class="Create" asp-action="Create">Create New</a>
 </p>
+                        }
 <table class="table">
     <thead>
         <tr>
@@ -36,11 +39,15 @@
             <td>
                 @Html.DisplayFor(modelItem => item.TeamLeague)
             </td>
+                @if (User.IsInRole("Administrator"))
+                { 
             <td>
+
                 <a class="Edits" asp-action="Edit" asp-route-id="@item.TeamId">Edit</a> |
                 <a class="Edits" asp-action="Details" asp-route-id="@item.TeamId">Details</a> |
                 <a class="Edits" asp-action="Delete" asp-route-id="@item.TeamId">Delete</a>
             </td>
+                }
         </tr>
 }
     </tbody>

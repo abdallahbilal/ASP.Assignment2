@@ -6,9 +6,12 @@
 
 <h1 class="MainHeadingForPages">Players</h1>
 
+   @if (User.IsInRole("Administrator"))
+                        { 
 <p>
     <a class="Create" asp-action="Create">Create New</a>
 </p>
+                        }
 <table class="table">
     <thead>                     
         <tr>
@@ -42,11 +45,14 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Teams.TeamName)
             </td>
+               @if (User.IsInRole("Administrator"))
+                        { 
             <td>
                 <a class="Edits" asp-action="Edit" asp-route-id="@item.PlayerId">Edit</a> |
                 <a class="Edits" asp-action="Details" asp-route-id="@item.PlayerId">Details</a> |
                 <a class="Edits" asp-action="Delete" asp-route-id="@item.PlayerId">Delete</a>
             </td>
+                        }
         </tr>
 }
     </tbody>
